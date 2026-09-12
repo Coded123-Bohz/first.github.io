@@ -1,0 +1,302 @@
+/* Flyer-led gold theme overrides. */
+:root {
+  --maroon: #741a10;
+  --maroon-dark: #3e140d;
+  --gold: #c58b18;
+  --gold-light: #f5d77a;
+  --cream: #f4dfaa;
+  --paper: #fff8e6;
+  --ink: #21160d;
+  --muted: #6f5a43;
+  --line: rgba(96, 54, 14, .2);
+  --shadow: 0 18px 55px rgba(93, 54, 12, .18);
+}
+
+.hero-image {
+  background-image: linear-gradient(90deg, rgba(34, 15, 8, .92), rgba(34, 15, 8, .42) 54%, rgba(34, 15, 8, .18)), url('https://images.unsplash.com/photo-1490730141103-6cac27aaab94?auto=format&fit=crop&w=1800&q=85');
+  background-position: center;
+  background-size: cover;
+}
+
+.page-hero {
+  background: linear-gradient(110deg, #4b170e, #9b5412 58%, #c58b18);
+}
+
+.service-strip,
+.statement-section,
+.site-footer {
+  background: #4b170e;
+}
+
+.cta-band {
+  background: linear-gradient(100deg, #d2a02a, #f0ca61);
+}
+
+.verse-section,
+.beliefs-section,
+.live-sidebar,
+.form-panel {
+  background: #f4dfaa;
+}
+
+.flyer-favicon-preview {
+  border: 1px solid var(--gold);
+  box-shadow: var(--shadow);
+}
+
+.flyer-showcase {
+  display: grid;
+  grid-template-columns: .9fr 1.1fr;
+  gap: 70px;
+  align-items: center;
+}
+
+.flyer-image {
+  display: block;
+  width: 100%;
+  max-height: 560px;
+  object-fit: contain;
+  box-shadow: var(--shadow);
+  border: 8px solid #fff0bd;
+}
+
+@media (max-width: 820px) {
+  .flyer-showcase {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+}
+
+.portal-layout {
+  display: grid;
+  grid-template-columns: minmax(280px, 420px) 1fr;
+  gap: 35px;
+  margin-top: 40px;
+}
+
+.portal-content-list {
+  display: grid;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.portal-post {
+  padding: 22px;
+  border-top: 2px solid var(--gold);
+  background: var(--cream);
+}
+
+.portal-post h3 {
+  margin: 10px 0;
+  font: 700 20px/1.3 var(--serif);
+}
+
+.portal-post p {
+  color: var(--muted);
+}
+
+.portal-post .text-link {
+  background: none;
+  padding: 0;
+}
+
+.portal-audio {
+  display: block;
+  width: 100%;
+  margin: 18px 0 12px;
+}
+
+.portal-pdf {
+  display: block;
+  width: 100%;
+  min-height: 420px;
+  margin: 18px 0 12px;
+  border: 1px solid var(--line);
+  background: #fff;
+}
+
+.portal-image {
+  display: block;
+  max-width: 100%;
+  max-height: 420px;
+  margin: 18px 0 12px;
+  object-fit: contain;
+  border: 1px solid var(--line);
+}
+
+.bible-assistant {
+  max-width: 820px;
+  margin: 42px 0;
+  padding: 32px;
+  background: var(--cream);
+  border-top: 3px solid var(--gold);
+  box-shadow: var(--shadow);
+}
+
+.bible-assistant h2 {
+  margin: 10px 0;
+  font: 700 28px/1.3 var(--serif);
+}
+
+.assistant-note {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.assistant-form {
+  display: flex;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.assistant-form input {
+  min-width: 0;
+  flex: 1;
+  padding: 13px 14px;
+  border: 1px solid var(--line);
+  background: var(--paper);
+  color: var(--ink);
+  font: inherit;
+}
+
+.assistant-answer {
+  margin-top: 20px;
+  padding: 20px;
+  background: var(--paper);
+  border-left: 3px solid var(--maroon);
+}
+
+.assistant-answer p {
+  margin-top: 0;
+}
+
+.assistant-answer cite {
+  color: var(--maroon);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 620px) {
+  .bible-assistant {
+    padding: 22px;
+  }
+
+  .assistant-form {
+    display: grid;
+  }
+}
+
+@media (max-width: 820px) {
+  .portal-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 620px) {
+  .hero-image {
+    background-position: 61% center;
+  }
+}
+
+.auth-page {
+  min-height: calc(100vh - 100px);
+  padding-top: 90px;
+  padding-bottom: 90px;
+  display: grid;
+  grid-template-columns: 1fr 430px;
+  gap: 80px;
+  align-items: center;
+}
+
+.auth-intro h1,
+.user-welcome h1 {
+  font: 700 clamp(34px, 5vw, 58px)/1.2 var(--serif);
+  margin: 14px 0 22px;
+}
+
+.auth-intro h1 em {
+  color: var(--gold);
+  font-style: normal;
+}
+
+.auth-intro > p:last-child {
+  max-width: 500px;
+  color: var(--muted);
+}
+
+.auth-card {
+  padding: 28px;
+  background: var(--cream);
+  border-top: 3px solid var(--gold);
+  box-shadow: var(--shadow);
+}
+
+.auth-tabs {
+  display: flex;
+  gap: 22px;
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 24px;
+}
+
+.auth-tab {
+  padding: 0 0 12px;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  font: 700 14px var(--sans);
+}
+
+.auth-tab.active {
+  border-color: var(--maroon);
+  color: var(--maroon);
+}
+
+.field-note {
+  color: var(--muted);
+  font-weight: 400;
+}
+
+.user-welcome {
+  grid-column: 1 / -1;
+}
+
+.user-grid {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.user-card {
+  padding: 28px;
+  border-top: 2px solid var(--gold);
+  background: var(--cream);
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.user-card h2 {
+  font: 700 22px var(--serif);
+  margin: 18px 0 8px;
+}
+
+.user-card p {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+@media (max-width: 820px) {
+  .auth-page {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .user-grid {
+    grid-template-columns: 1fr;
+  }
+}

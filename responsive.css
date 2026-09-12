@@ -1,0 +1,404 @@
+/* Whole-site responsive layer. Loaded after the base and gold theme styles. */
+
+html {
+  overflow-x: hidden;
+}
+
+img,
+iframe,
+video,
+svg {
+  max-width: 100%;
+}
+
+button,
+input,
+select,
+textarea {
+  max-width: 100%;
+}
+
+@media (max-width: 1100px) {
+  .container {
+    width: min(100% - 36px, 980px);
+  }
+
+  .site-header {
+    gap: 16px;
+  }
+
+  .site-nav {
+    gap: 14px;
+  }
+
+  .intro-section,
+  .about-intro,
+  .pastor-section {
+    gap: 48px;
+  }
+
+  .verse-layout {
+    gap: 55px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1.5fr repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .site-header {
+    padding: 12px 18px;
+  }
+
+  .site-nav a {
+    font-size: 12px;
+  }
+
+  .hero {
+    min-height: 570px;
+  }
+
+  .hero-content {
+    padding: 78px 0;
+  }
+
+  .hero h1,
+  .page-hero h1 {
+    max-width: 680px;
+    font-size: clamp(38px, 7vw, 62px);
+  }
+
+  .service-grid {
+    grid-template-columns: 1fr 1fr;
+    padding: 24px 0;
+  }
+
+  .section-kicker {
+    grid-column: 1 / -1;
+    padding-bottom: 8px;
+  }
+
+  .service-item {
+    padding: 14px 0;
+  }
+
+  .intro-section,
+  .about-intro,
+  .verse-layout,
+  .pastor-section,
+  .live-layout,
+  .contact-grid,
+  .give-grid,
+  .flyer-showcase,
+  .auth-page {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .intro-copy,
+  .verse-copy {
+    max-width: none;
+  }
+
+  .belief-grid,
+  .sermon-grid,
+  .user-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .portal-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .auth-page {
+    align-items: start;
+  }
+
+  .auth-intro {
+    max-width: 680px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 680px) {
+  .container {
+    width: min(100% - 28px, 560px);
+  }
+
+  .site-header {
+    min-height: 66px;
+  }
+
+  .brand-mark {
+    width: 36px;
+    height: 36px;
+    font-size: 20px;
+  }
+
+  .brand strong {
+    font-size: 12px;
+  }
+
+  .brand small {
+    font-size: 8px;
+    letter-spacing: .12em;
+  }
+
+  .menu-toggle {
+    display: grid;
+    flex: 0 0 auto;
+  }
+
+  .site-nav {
+    display: none;
+    position: absolute;
+    top: 66px;
+    left: 0;
+    right: 0;
+    z-index: 20;
+    align-items: stretch;
+    gap: 0;
+    padding: 8px 18px 16px;
+    background: var(--paper);
+    border-bottom: 1px solid var(--line);
+    box-shadow: var(--shadow);
+  }
+
+  .site-nav.open {
+    display: flex;
+  }
+
+  .site-nav a,
+  .site-nav .theme-toggle {
+    padding: 11px 0;
+    font-size: 14px;
+  }
+
+  .hero {
+    min-height: 600px;
+  }
+
+  .hero-content {
+    padding: 64px 0;
+  }
+
+  .hero h1,
+  .page-hero h1 {
+    font-size: clamp(34px, 11vw, 48px);
+  }
+
+  .hero-tagline {
+    font-size: 16px;
+  }
+
+  .hero-actions {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .button {
+    min-height: 48px;
+  }
+
+  .service-grid,
+  .belief-grid,
+  .sermon-grid,
+  .user-grid,
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-item {
+    border-top: 1px solid rgba(255, 255, 255, .2);
+  }
+
+  .section-pad,
+  .content-section {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  .section-heading h2,
+  .about-intro h2,
+  .verse-copy h2,
+  .pastor-section h2 {
+    font-size: 32px;
+  }
+
+  .lead {
+    font-size: 17px;
+  }
+
+  .verse-art {
+    min-height: 250px;
+  }
+
+  .people-row i {
+    width: 32px;
+    height: 80px;
+  }
+
+  .people-row i:nth-child(2),
+  .people-row i:nth-child(6) {
+    height: 105px;
+  }
+
+  .people-row i:nth-child(4) {
+    height: 125px;
+  }
+
+  .cross-shape {
+    font-size: 160px;
+  }
+
+  .event {
+    grid-template-columns: 78px 1fr;
+    gap: 12px;
+  }
+
+  .event-time {
+    grid-column: 2;
+    text-align: left;
+  }
+
+  .toolbar,
+  .payment-row,
+  .assistant-form {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .toolbar .input,
+  .toolbar .select,
+  .toolbar .button,
+  .payment-row .button,
+  .assistant-form .button {
+    width: 100%;
+  }
+
+  .admin-form,
+  .form-panel,
+  .auth-card,
+  .bible-assistant {
+    padding: 22px;
+  }
+
+  .admin-form .file-row {
+    grid-template-columns: 1fr;
+  }
+
+  .pastor-photo {
+    min-height: 320px;
+  }
+
+  .video-frame {
+    border-width: 4px;
+  }
+
+  .map {
+    min-height: 240px;
+  }
+
+  .portal-pdf {
+    min-height: 300px;
+  }
+
+  .footer-bottom {
+    display: grid;
+    gap: 8px;
+  }
+}
+
+@media (max-width: 420px) {
+  .container {
+    width: min(100% - 22px, 390px);
+  }
+
+  .site-header {
+    padding: 10px 11px;
+  }
+
+  .brand {
+    gap: 8px;
+  }
+
+  .brand strong {
+    font-size: 11px;
+  }
+
+  .brand small {
+    max-width: 160px;
+    line-height: 1.2;
+  }
+
+  .hero {
+    min-height: 620px;
+  }
+
+  .hero h1,
+  .page-hero h1 {
+    font-size: 34px;
+  }
+
+  .hero-stamp {
+    display: none;
+  }
+
+  .page-hero {
+    padding: 64px 0;
+  }
+
+  .page-hero p:last-child {
+    font-size: 15px;
+  }
+
+  .service-item {
+    gap: 10px;
+  }
+
+  .service-item b {
+    font-size: 13px;
+  }
+
+  .event-date {
+    font-size: 12px;
+  }
+
+  .event h3 {
+    font-size: 17px;
+  }
+
+  .footer-grid {
+    gap: 10px;
+  }
+}
+
+.message-reader {
+  max-width: 820px;
+  padding-top: 90px;
+  padding-bottom: 100px;
+}
+
+.message-reader h1 {
+  margin: 12px 0;
+  font: 700 clamp(34px, 6vw, 58px)/1.2 var(--serif);
+}
+
+.message-meta {
+  color: var(--maroon);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.message-body {
+  margin-top: 42px;
+  padding: 30px;
+  background: var(--cream);
+  border-left: 3px solid var(--gold);
+  font: 18px/1.9 var(--serif);
+}

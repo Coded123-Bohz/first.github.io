@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sign in to Grace and Truth Came Through Jesus Christ.">
+  <title>Sign In | Grace and Truth</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/gold-theme.css">
+  <link rel="icon" type="image/jpeg" href="js/IMG-20260912-WA0109.jpg">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-mark">G<span>+</span></span><span><strong>Grace &amp; Truth</strong><small>Came Through Jesus Christ</small></span></a>
+    <a class="admin-link" href="index.html">Back to site</a>
+  </header>
+  <main>
+    <section class="container auth-page">
+      <div class="auth-intro"><p class="eyebrow">Two portals</p><h1>Sign in and<br><em>continue.</em></h1><p>Enter your account details. The exact admin code opens the admin portal. Any other value opens the users portal.</p></div>
+      <div class="auth-card">
+        <form id="login-form" class="form-grid">
+          <label>Portal code<input name="portalCode" type="password" autocomplete="off" required></label>
+          <button class="button button-dark" type="submit">Sign in <span>→</span></button>
+        </form>
+        <p id="auth-message" class="notice" role="alert"></p>
+      </div>
+    </section>
+  </main>
+  <script defer src="js/portal.js"></script>
+</body>
+</html>
